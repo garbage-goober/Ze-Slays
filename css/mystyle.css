@@ -7,6 +7,10 @@ body {
     width: 100%;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 main,
 section,
 footer {
@@ -25,10 +29,12 @@ footer {
     height: 42vh;
 }
 
-.padding-top {
-    padding-top: 50px;
-}
-
 .margin-bottom {
     margin-bottom: 20px;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
