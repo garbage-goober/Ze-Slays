@@ -32,37 +32,45 @@ footer {
 .white-star {
     top: 100px;
     left: 40px;
+    width: 116px;
+    height: 156px;
 }
 
 .yellow-star {
     bottom: 100px;
     right: 35px;
+    width: 116px;
+    height: 156px;
 }
 
 .cute-cat {
     top: 75px;
-    right: -30px;
+    right: -40px;
     transform: rotate(270deg);
+    width: 120px;
+    height: 125px;
 }
 
 .white-star,
 .yellow-star,
 .cute-cat {
-    display: none;
+    display: block;
     position: absolute;
-    width: 20%;
-    height: 30%;
+    z-index: -1;
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 400px) {
 
     .white-star,
     .yellow-star,
     .cute-cat {
         display: block;
-        width: 30%;
         height: auto;
-        z-index: -1;
+
+    }
+
+    .cute-cat {
+        right: -40px;
     }
 
 }
