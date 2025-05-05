@@ -43,34 +43,25 @@ footer {
     height: 156px;
 }
 
-.cute-cat {
-    top: 75px;
-    right: -40px;
-    transform: rotate(270deg);
-    width: 120px;
-    height: 125px;
+.purple-star {
+    top: 100px;
+    right: 65px;
+    width: 100px;
+    height: 90px;
 }
 
 .white-star,
 .yellow-star,
-.cute-cat {
+.purple-star {
     display: block;
     position: absolute;
     z-index: -1;
 }
 
 @media only screen and (max-width: 400px) {
-
-    .white-star,
-    .yellow-star,
-    .cute-cat {
-        display: block;
-        height: auto;
-
-    }
-
-    .cute-cat {
-        right: -40px;
+    .purple-star {
+        top: 200px;
+        right: 20px;
     }
 
 }
