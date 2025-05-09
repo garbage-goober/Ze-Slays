@@ -1,5 +1,5 @@
 body {
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "Press Start 2P", cursive;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 900;
@@ -64,6 +64,14 @@ footer {
         right: 20px;
     }
 
+    .h3 {
+        font-size: 80%;
+    }
+
+    .purple-star {
+        width: 10px;
+        height: 10px;
+    }
 }
 
 .margin-bottom {
