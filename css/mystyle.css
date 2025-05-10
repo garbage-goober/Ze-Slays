@@ -3,7 +3,6 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 900;
-    height: 250vh;
     width: 100%;
 }
 
@@ -11,9 +10,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-main,
-section,
-footer {
+main, section, footer {
     width: 100%;
 }
 
@@ -43,25 +40,10 @@ footer {
     height: 156px;
 }
 
-.purple-star {
-    top: 100px;
-    right: 65px;
-    width: 100px;
-    height: 90px;
-}
-
-.white-star,
-.yellow-star,
-.purple-star {
+.white-star, .yellow-star {
     display: block;
     position: absolute;
     z-index: -1;
-}
-
-.sailor {
-    width: 480px;
-    height: 480px;
-    position: relative;
 }
 
 .center-flex {
@@ -70,24 +52,9 @@ footer {
     align-items: center;
 }
 
-@media only screen and (max-width: 400px) {
-    .purple-star {
-        top: 200px;
-        right: 20px;
-    }
-
-    .h3 {
+@media only screen and (max-width: 700px) {
+    .h3, .h2 {
         font-size: 80%;
-    }
-
-    .purple-star {
-        width: 10px;
-        height: 10px;
-    }
-
-    .sailor {
-        width: 240px;
-        height: 240px;
     }
 }
 
