@@ -3,27 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boostrap</title>
+    <title>Ze Slays</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- for nav po ayaw po kasi mag-collapse ng burger button pag walang js ng bootstrap -->
+    <!-- js for nav po ayaw po kasi mag-collapse ng burger button pag walang js ng bootstrap -->
     <link rel="stylesheet" href="css/mystyle.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/icon" href="images/favicon.png">
+    <style type="text/css">
       body {
         background-image: url("images/bg1.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+      }
+
+      .album-section {
+        height: 60vh;
+      }
+      
+      @media only screen and (max-width: 400px) {
+          main {
+            height: 330vh;
+          }
       }
     </style>
   </head>
@@ -32,30 +37,15 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="images/ze-slays-logo.png">
-            <img
-              src="images/ze-slays-logo.png"
-              alt="Small logo of zeslays"
-              width="100%"
-              height="24"
-            />
+            <img src="images/ze-slays-logo.png" alt="Small logo of zeslays" width="100%" height="24">
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="true"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About Us</a>
@@ -71,34 +61,96 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section class="py-5 text-center container">
+    <main class="container">
+      <section class="album-section py-5 text-center container">
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">Album example</h1>
-            <p class="lead text-body-secondary">
-              Something short and leading about the collection below—its
-              contents, the creator, etc. Make it short and sweet, but not too
-              short so folks don’t simply skip over it entirely.
-            </p>
-            <p>
-              <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            </p>
+            <h1 class="fw-light"><span class="gold">✨ Gallery ✨</span></h1>
+            <p class="lead text-body-secondary">Welcome to ZE SLAYS, your go-to shop for trendy and stylish pieces that elevate your everyday look. From chic bags and statement shorts to playful dresses and elegant outfits, we bring you curated fashion that’s fresh, feminine, and easy to wear. Dress confidently and express your style effortlessly—because you deserve to slay every day.</p>
+            <p><a href="#" class="btn btn-primary my-2">Products</a></p>
+          </div>
+        </div>
+      </section>
+      <section id="album" class="container-fluid">       
+        <div class="album py-5">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" src="images/bag-black.jpg" alt="Image if a black bag">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-body-secondary">Item 1</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" src="images/dress.jpg" alt="Image collection of dress">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-body-secondary">Item 2, 3, 4</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" src="images/bag-pink.jpg" alt="Image of a pink bag">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-body-secondary">Item 5</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" src="images/short-green.jpg" alt="Image of a color green short">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-body-secondary">Item 6</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" src="images/dress2.jpg" alt="Image collection of dress">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-body-secondary">Item 7, 8, 9</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" src="images/short-sunflower.jpg" alt="Image short with sunflower design">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-body-secondary">Item 10</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="container">
+      <h1 class="h1"><span class="white">Share your </span><span class="gold">Feedback</span></h1>
       <form action="">
-        <div class="form-group">
+        <div style="display: inline;" class="form-group">
           <label for="feedback">Feedback</label>
-          <input
-            type="text"
-            class="form-control"
-            id="feedback"
-            placeholder="Message here"
-          />
+          <input type="text" class="form-control" id="feedback" placeholder="Message here">
+          <br>
+          <button class="form-control" type="submit">Submit here</button>
         </div>
+        <br>
+        <h1 class="h2 text-end"><span class="gold">&copy; 2025 Ze Slays.</span><span class="white">All rights reserved.</span></h1>
       </form>
     </footer>
   </body>
