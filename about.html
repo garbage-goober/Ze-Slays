@@ -12,7 +12,15 @@
     <link rel="stylesheet" href="css/mystyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
     <style>
-      
+      .parent {
+        position: relative;
+      }
+
+      .white-star {
+        position: absolute;
+        top: 10px;
+        left: 70%; 
+      }
     </style>
   </head>
   <body>
@@ -47,14 +55,16 @@
     <main class="container">
       <section class="about-banner modal-dialog-centered">
         <div class="d-flex flex-column justify-content-center align-items-start">
-          <h1 class="text-uppercase"><span class="gold">About</span> <span class="white">Us</span></h1>
-          <p class="lead">At Twogether, we are positively obsessed with B2B tech. Hooked on it. As expert and passionate about it as our clients are.<br>Perhaps even more so once in a while.</p>
+          <h1 class="text-uppercase"><span class="gold">History </span><span class="white">of ze slays</span></h1>
+          <p class="lead">The main reason Ms. Nicole initially decided to start a business was simple: she just wanted to sell a few clothes from her personal collection that she no longer liked. She didn’t expect to enjoy it—yet, to her surprise, she ended up loving the process. Over time, what began as a casual attempt turned into a genuine passion, and from there, everything began to grow naturally.</p>
           <p class="lead"> <a href="#about" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn More</a> </p>
+          <img class="yellow-star" src="images/yellow-star.gif" alt="Twinkling yellow star">
         </div>
       </section>
-      <section id="about" class="container-fluid">
+      <section id="about" class="container-fluid">       
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 parent">
+            <img class="white-star" src="images/white-star.gif" alt="Twinkling white star">
             <h1 class="h1 text-uppercase"><span class="white">Meet The</span> <span class="gold">Owner</span></h1>
             <img class="bd-placeholder-img rounded-circle member-icon" src="images/atenicole.jpg" alt="">
             <title>Placeholder</title><rect width="100%" height="100%"></rect><text x="50%" y="50%" dy=".3em"></text>
