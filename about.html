@@ -1,47 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Boostrap</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="js/bootstrap.bundle.min.js"></script> <!-- for nav po ayaw po kasi mag-collapse ng burger button pag walang js ng bootstrap -->
-        <link rel="stylesheet" href="css/mystyle.css">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                    <img src="images/logo.png" alt="" width="100%" height="24">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </header>
-        <main>
-          
-        </main>
-    </body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script> <!-- for nav po ayaw po kasi mag-collapse ng burger button pag walang js ng bootstrap -->
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="images/ze-slays-logo.png">
+            <img src="images/ze-slays-logo.png" alt="Small logo of zeslays" width="100%" height="24">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="about-banner modal-dialog-centered">
+        <div class="d-flex flex-column justify-content-center align-items-start">
+          <h1 class="text-uppercase"><span class="gold">About</span> <span class="white">Us</span></h1>
+          <p class="lead">At Twogether, we are positively obsessed with B2B tech. Hooked on it. As expert and passionate about it as our clients are.<br>Perhaps even more so once in a while.</p>
+          <p class="lead"> <a href="#about" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn More</a> </p>
+        </div>
+      </section>
+      <section id="about" class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="h1 text-uppercase"><span class="white">Meet The</span> <span class="gold">Owner</span></h1>
+            <img class="bd-placeholder-img rounded-circle member-icon" src="images/atenicole.jpg" alt="">
+            <title>Placeholder</title><rect width="100%" height="100%"></rect><text x="50%" y="50%" dy=".3em"></text>
+            <h1>Nicole Grace Bactat</h1>
+            <p class="lead">A 22-year-old entrepreneur from Valeriana, Zaragoza, Nueva Ecija. She is a dedicated and hardworking businesswoman, currently in her final year at the College of Information and Communication Technology, Nueva Ecija University of Science and Technology. Balancing academics and entrepreneurship, she continues to grow ZeSlays with passion, creativity, and a strong sense of purpose.</p>
+          </div>
+          <div class="col-lg-6 mx-auto">
+            <h1 class="h1 text-uppercase"><span class="gold">Map</span> <span class="white">Preview</span></h1>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d824.3582860679925!2d120.7660639746777!3d15.40077548257052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396db0051fee1dd%3A0x51e199eedec982b0!2sValeriana%20Brgy.%20Hall!5e0!3m2!1sen!2sph!4v1747010933734!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container">
+    </footer>
+  </body>
 </html>
