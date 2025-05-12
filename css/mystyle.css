@@ -4,10 +4,6 @@ body {
     font-style: normal;
     font-weight: 900;
     width: 100%;
-    background-image: url(/bg1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 body::-webkit-scrollbar {
@@ -83,16 +79,13 @@ footer {
     height: 100%;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 900px) {
     body {
         background-attachment: fixed;
     }
-    .lead {
+
+    .h3, .h2, .lead{
         font-size: 90%;
-    }
-    
-    .h3, .h2 {
-        font-size: 95%;
     }
 
     .about-banner {
