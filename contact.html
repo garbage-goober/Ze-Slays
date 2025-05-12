@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boostrap</title>
+    <title>Ze Slays</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
@@ -19,13 +19,21 @@
         background-size: cover;
         background-position: center;
       }
+
+      main {
+        height: 100vh;
+      }
+
+      #contact {
+        height: 50vh;
+      }
     </style>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="images/ze-slays-logo.png">
+          <a class="navbar-brand" href="index.html">
             <img src="images/ze-slays-logo.png" alt="Small logo of zeslays" width="100%" height="24">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
@@ -51,7 +59,22 @@
       </nav>
     </header>
     <main class="container">
-      
+      <section id="contact" class="banner modal-dialog-centered">
+        <div class="flex-column justify-content-center align-items-start">
+          <h1 class="text-uppercase"><span class="gold">Contact Ze Slays</span><span class="white"> Via the Following:</span></h1>
+          <a href="https://www.facebook.com/profile.php?id=61562394444378"><img class="img-fluid contact-icons" src="images/fb-icon.png" alt="Facebook icon logo"></a>
+          <a href="https://www.facebook.com/nicolebactatcollxn"><img class="img-fluid contact-icons" src="images/messenger.png" alt="messenger icon"></a>
+          <a href="mailto: zeslays2023@gmail.com"><img class="img-fluid contact-icons" src="images/email.png" alt="email icon"></a>
+          <a href="tel: +639972418404"><img class="img-fluid contact-icons" src="images/phone.png" alt="phone logo"></a>
+          <img class="yellow-star" src="images/yellow-star.gif" alt="Twinkling yellow star">
+        </div>
+      </section>
+      <section class="container-fluid">       
+          <div class="mx-auto map">
+            <h1 class="h1 text-uppercase"><span class="gold">Map</span> <span class="white">Preview</span></h1>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1165.8173529748506!2d120.7655482958313!3d15.401031658421447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396db2be5e2e8a9%3A0xef0d38997b28ddb2!2sMaricon%20Bactat%20Store!5e0!3m2!1sen!2sph!4v1747026637340!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </section>
     </main>
     <footer class="container">
       <h1 class="h1"><span class="white">Share your </span><span class="gold">Feedback</span></h1>
