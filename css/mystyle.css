@@ -54,11 +54,6 @@ footer {
     z-index: -1;
 }
 
-.sample-img {
-    width: 80%;
-    height: 80%;
-}
-
 .center-flex {
     display: flex;
     justify-content: center;
@@ -94,7 +89,7 @@ footer {
         background-attachment: fixed;
     }
 
-    .h3, .h2, .lead{
+    .h3, .h2, .lead {
         font-size: 90%;
     }
 
