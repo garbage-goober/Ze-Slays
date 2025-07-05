@@ -19,13 +19,18 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+header {
+    position: sticky;
+    top: 0px;
+    align-content: center;
+    background-color: #422445;
+    padding: 10px;
+}
+
 nav {
     display: flex;
     align-items: center;
-    height: 5vh;
-    margin: 0 5px;
-    position: fixed;
-    top: 10px;
+    justify-content: space-between;
 }
 
 .wrapper {
@@ -41,10 +46,6 @@ nav {
 
 .pad-t {
     padding-top: 50px;
-}
-
-.logo {
-    margin-right: auto;
 }
 
 .nav-list {
@@ -67,7 +68,7 @@ nav {
 }
 
 .banner {
-    height: 100dvh;
+    height: 95dvh;
     display: flex;
     align-items: center;
     justify-content: center;
