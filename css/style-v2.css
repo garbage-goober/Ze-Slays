@@ -32,6 +32,10 @@ nav {
     justify-content: space-between;
 }
 
+img {
+    max-width: 100%;
+}
+
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
@@ -63,7 +67,7 @@ nav {
 }
 
 .banner {
-    height: 92dvh;
+    height: 93dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,11 +87,13 @@ nav {
     font-size: 1.2rem;
     padding: 0 20px;
     text-align: center;
+    text-shadow: 1px 0.4px #ffffff;
+    font-weight: 400;
 }
 
 .sec-title {
     font-size: 2rem;
-    padding: 50px 0px 5px 0px;
+    padding: 50px 0px 0px 5px;
 }
 
 .exp-button {
@@ -109,21 +115,51 @@ nav {
     height: 100dvh;
 }
 
-.intro-text {
+.int-content {
+    display: flex;
+    justify-content: center;
+}
+
+.int-text {
     background-color: #ffffff;
     box-shadow: 10px 10px rgb(255, 223, 39);
     padding: 10px;
     color: #000000;
+    font-size: 1.2rem;
+}
+
+.int-img {
+    height: 280px;
+    margin-left: 20px;
+    border-radius: 3px;
 }
 
 @media only screen and (max-height: 490px) {
     header {
         padding: 2px;
     }
+
+    .banner {
+        height: 92dvh;
+    }
 }
 
 @media only screen and (max-width: 490px) {
     .exp-button {
         padding-top: 30px;
+    }
+
+    .int-content {
+        flex-direction: column;
+    }
+
+    .int-img {
+        margin-left: 0;
+        margin-top: 20px;
+        height: fit-content;
+    }
+
+    .int-text {
+        box-shadow: 4px 4px rgb(255, 223, 39);
     }
 }
