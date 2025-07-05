@@ -11,20 +11,12 @@
     <script src="js/bootstrap.bundle.min.js"></script> <!-- for nav po ayaw po kasi mag-collapse ng burger button pag walang js ng bootstrap -->
     <link rel="stylesheet" href="css/style-v1.css">
     <link rel="icon" type="image/icon" href="images/favicon.png">
-    <style>
+    <style type="text/css">
       body {
         background-image: url("images/bg1.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-      }
-
-      main {
-        height: 100vh;
-      }
-
-      #contact {
-        height: 50vh;
       }
     </style>
   </head>
@@ -41,7 +33,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a target="_self" class="nav-link" href="home.html">Home</a>
+                <a target="_self" class="nav-link active" href="home.html">Home</a>
               </li>
               <li class="nav-item">
                 <a target="_self" class="nav-link" href="about.html">About Us</a>
@@ -50,7 +42,7 @@
                 <a target="_self" class="nav-link" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
-                <a target="_self" class="nav-link active" href="contact.html">Contact Us</a>
+                <a target="_self" class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -58,33 +50,26 @@
       </nav>
     </header>
     <main class="container">
-      <section id="contact" class="banner modal-dialog-centered">
-        <div class="flex-column justify-content-center align-items-start">
-          <h1 class="text-uppercase"><span class="white">Contact Ze Slays Via</span></h1>
-          <a href="https://www.facebook.com/profile.php?id=61562394444378"><img class="img-fluid contact-icons" src="images/fb-icon.png" alt="Facebook icon logo"></a>
-          <a href="https://www.facebook.com/nicolebactatcollxn"><img class="img-fluid contact-icons" src="images/messenger.png" alt="messenger icon"></a>
-          <a href="mailto: zeslays2023@gmail.com"><img class="img-fluid contact-icons" src="images/email.png" alt="email icon"></a>
-          <a href="tel: +639972418404"><img class="img-fluid contact-icons" src="images/phone.png" alt="phone logo"></a>
+      <section class="container-fluid center-flex for-mobile">
+        <figure class="figure">
+          <img class="white-star" src="images/white-star.gif" alt="Twinkling white star">
+          <img class="figure-img img-fluid margin-bottom" src="images/ze-slays-logo.png" alt="Ze Slays Logo Large">
+          <figcaption class="fig-caption text-center h3">⋆˚࿔ Home of trendy, premium, & handpicked clothes collection 𝜗𝜚˚⋆</figcaption>
           <img class="yellow-star" src="images/yellow-star.gif" alt="Twinkling yellow star">
-        </div>
+        </figure>
       </section>
-      <section class="container-fluid">       
-          <div class="mx-auto map">
-            <h1 class="h1 text-uppercase"><span class="gold">Map</span> <span class="white">Preview</span></h1>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1165.8173529748506!2d120.7655482958313!3d15.401031658421447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396db2be5e2e8a9%3A0xef0d38997b28ddb2!2sMaricon%20Bactat%20Store!5e0!3m2!1sen!2sph!4v1747026637340!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <section class="container-fluid py-4">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center">
+            <img class="img-fluid mx-auto sailor" src="images/sailor.gif" alt="Sailor anime character">
           </div>
+          <div class="col-md-7 mt-3 mt-md-0">
+            <p class="h2 text-center text-md-start">Welcome to <span class="gold">ZE SLAYS</span>, your go-to shop for trendy and stylish pieces that elevate your everyday look. From chic bags and statement shorts to playful dresses and elegant outfits, we bring you curated fashion that’s fresh, feminine, and easy to wear. Dress confidently and express your style effortlessly—because you deserve to slay every day.</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="container">
-      <h1 class="h1"><span class="white">Share your </span><span class="gold">Feedback</span></h1>
-      <form action="">
-        <div class="form-group">
-          <label for="feedback">Feedback</label>
-          <input type="text" class="form-control" id="feedback" placeholder="Message here">
-          <br>
-          <button class="form-control" type="submit">Submit here</button>
-        </div>
-      </form>
       <br>
       <h1 class="h2 text-end"><span class="gold">&copy; 2025 Ze Slays. </span><span class="white">All rights reserved.</span></h1>
     </footer>
