@@ -4,4 +4,4 @@
     <li>Neilan Padilla</li>
     <li>Alelie Basilio</li>
 </ol>
-<a href="https://github.com/neotrashcoder/casestudy_itws01.git">Download here</a>
+<a href="https://softcrasher.github.io/Ze-Slays/">Open Link</a>
