@@ -4,4 +4,4 @@
     <li>Neilan Padilla</li>
     <li>Alelie Basilio</li>
 </ol>
-<a href="https://softcrasher.github.io/Ze-Slays/">Open Link</a>
+<a href="https://garbage-goober.github.io/Ze-Slays/">Open Link</a>
