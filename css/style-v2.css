@@ -109,15 +109,13 @@ img {
     padding-top: 10px;
 }
 
-.exp-button button {
+.exp-button a {
     box-shadow: 5px 5px goldenrod;
     font-weight: bold;
     padding: 5px 5vh;
-}
-
-.exp-button a {
+    background-color: #ffffff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
 .introduction {
@@ -155,22 +153,16 @@ img {
 }
 
 @media only screen and (max-width: 670px) {
-    section {
+    .introduction {
         height: auto;
     }
+
     .exp-button {
         padding-top: 30px;
     }
 
     .int-content {
         flex-direction: column;
-    }
-
-    .padt {
-        padding-top: 50px;
-    }
-    .sec-title {
-        font-size: 2rem;
     }
 
     .int-img {
@@ -182,7 +174,6 @@ img {
 
     .int-text {
         box-shadow: 4px 4px rgb(255, 223, 39);
-        font-size: 1rem;
     }
 }
 
