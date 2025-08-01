@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --res-size: clamp(1rem, 2.3vw, 1.7rem)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: var(--res-size);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+    max-width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    padding: 15px;
+}
+
+nav { /*  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-link a {
+    padding: 7px;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link a:hover {
+    text-decoration: underline 3px;
+    text-decoration-skip-ink: auto;
+}
+
+.logo {
+    height: 50px;
+}
+
+.banner {
+    padding-top: 200px;
+}
+
+.banner-image {
+    max-width: 1280px;
+}
+
+.center-y3 {
+    padding-top: 100px;
+}
+
+/*-------------------- REUSABLE CSS -------------*/
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+.img-fluid {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1280;
+    margin: 0 5%;
+}
+
+.container {
+    padding: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.pb-200px {
+    padding-bottom: 200px;
+}
+
+.bg-pink {
+    background-color: #fff5f9;
+    color: auto;
+}
+
+.bg-black {
+    color: white;
+    background-color: black;
+}
+
+.bg-white {
+    color: black;
+    background-color: white;
+}
+
+.flower-list {
+	margin-inline: 0px;
+	padding: 0px;
+	background: url('flower2.gif') left center no-repeat;
+    padding-left: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.gap-20px {
+    gap: 20px;
+}
+
+.gap-20px {
+    gap: 30px;
+}
+
+.gap {
+    gap: 40px;
+}
+
+.text-muted {
+    
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.h1 {
+    font-size: 3.5rem;
+}
+
+.h2 {
+    font-size: 2.5rem;
+}
+
+.h3 {
+    font-size: 1.5em;
+}
+
+.h4 {
+    font-size: 1.25em;
+}
+
+.subheading-2 {
+    font-size: 1.5rem;
+    color: darkorchid;
+}
+
+.text-white {
+    color: white;
+}
+
+/*-------------------- MARQUEE ------------------*/
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 10%;
+}
+
+.marquee-scrolling {
+    animation: marquee 10s linear infinite;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.marquee-scrolling {
+    animation: marquee 10s linear infinite;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to { 
+        transform: translateX(-100%);
+    }
+}
+/*-------------------- MARQUEE ------------------*/
+
+/*-------------------- TYPING EFFECT ------------*/
+
+.typewriter {
+    display: flex;
+    align-items: center;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 4px solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+    font-size: 10rem;
+    color: violet;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+
+
+/*-------------------- REUSABLE CSS -------------*/
+
+#home, #about {
+    height: auto;
+}
