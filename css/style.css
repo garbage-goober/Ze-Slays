@@ -68,13 +68,62 @@ ul {
     max-width: 1280px;
 }
 
-.center-y3 {
-    padding-top: 100px;
+.owner-picture, .coder-picture {
+    height: 256px;
+    border-radius: 50%;
+    padding: 0 40px;
+}
+
+.about-owner {
+    display: flex;
+    align-items: center;
+}
+
+.owner-info {
+    border-left: 3px solid #8a36b6;
+    padding: 0 20px;
+}
+
+.owner-info p {
+    text-align: left;
+}
+
+.heading-product {
+    font-size: 10rem;
+}
+
+.product-card {
+    height: 420px;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+.product-image {
+    width: 480px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.product-description {
+    padding: 0px 5px;
+    font-size: 24px;
+}
+
+.flx-rw {
+    display: flex;
+    flex-direction: row;
 }
 
 /*-------------------- REUSABLE CSS -------------*/
 
-.center {
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.img-center {
     display: block;
     margin: auto;
 }
@@ -84,7 +133,7 @@ ul {
 }
 
 .wrapper {
-    max-width: 1280;
+    max-width: 95%;
     margin: 0 5%;
 }
 
@@ -94,8 +143,8 @@ ul {
     position: relative;
 }
 
-.pb-200px {
-    padding-bottom: 200px;
+.pb-100px {
+    padding-bottom: 100px;
 }
 
 .bg-pink {
@@ -113,6 +162,23 @@ ul {
     background-color: white;
 }
 
+.bg-dark-violet {
+    background-color: #8a36b6;
+}
+
+.bg-light-purple {
+    background-color: #c39cca;
+}
+
+.bg-dark-purple {
+    background-color: #d977ba;
+}
+
+.bg-goldenrod {
+    background-color: goldenrod;
+}
+
+
 .flower-list {
 	margin-inline: 0px;
 	padding: 0px;
@@ -122,19 +188,31 @@ ul {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: auto auto auto;
+}
+
+.gap-10px {
+    gap: 10px;
 }
 
 .gap-20px {
     gap: 20px;
 }
 
-.gap-20px {
+.gap-30px {
     gap: 30px;
 }
 
-.gap {
+.gap-40px {
     gap: 40px;
+}
+
+.pad-tb-60px {
+    padding: 60px 0;
+}
+
+.pad-lr-30px {
+    padding: 0 30px;
 }
 
 .text-muted {
@@ -163,24 +241,37 @@ ul {
 
 .subheading-2 {
     font-size: 1.5rem;
-    color: darkorchid;
+}
+
+.text-dark-violet {
+    color: #8a36b6;
+}
+
+.text-light-purple {
+    color: #c39cca;
+}
+
+.text-dark-purple {
+    color: #d977ba;
+}
+
+.text-goldenrod {
+    color: goldenrod;
 }
 
 .text-white {
     color: white;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /*-------------------- MARQUEE ------------------*/
 .marquee-container {
     overflow: hidden;
     white-space: nowrap;
-    padding-top: 10%;
-}
-
-.marquee-scrolling {
-    animation: marquee 10s linear infinite;
-    display: inline-block;
-    padding-right: 5px;
+    padding-top: 5%;
 }
 
 .marquee-scrolling {
@@ -189,10 +280,9 @@ ul {
     padding-right: 10px;
 }
 
-
 @keyframes marquee {
     from {
-        transform: translateX(0);
+        transform: translateX(100);
     }
     to { 
         transform: translateX(-100%);
@@ -234,6 +324,13 @@ ul {
 
 /*-------------------- REUSABLE CSS -------------*/
 
-#home, #about {
+#home, #about, #gallery {
     height: auto;
+}
+
+@media only screen and(min-width: 1280px) {
+    body {
+        background-color: wheat;
+        z-index: 999;
+    }
 }
