@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --res-size: clamp(1rem, 2.3vw, 1.7rem)
+    --res-firefox: clamp(1rem, 2.3vw, 1.7rem);
+    --red-chrome: clamp(1rem, 2.0vw, 1.0rem)
 }
 
 * {
@@ -11,13 +12,11 @@
 }
 
 body {
-    overflow-x: hidden;
-    font-size: var(--res-size);
+    font-size: var(--res-firefox);
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: auto;
     font-style: normal;
-    max-width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -61,11 +60,15 @@ ul {
 }
 
 .banner {
-    padding-top: 200px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner-image {
-    max-width: 1280px;
+    width: 1000px;
 }
 
 .owner-picture, .coder-picture {
@@ -109,6 +112,7 @@ ul {
 .product-description {
     padding: 0px 5px;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .flx-rw {
@@ -116,6 +120,15 @@ ul {
     flex-direction: row;
 }
 
+
+.map-details {
+    margin-inline: auto;
+}
+
+.map-preview {
+    min-width: 700px; 
+    min-height: 450px;
+}
 /*-------------------- REUSABLE CSS -------------*/
 
 .flex-center {
@@ -164,6 +177,7 @@ ul {
 
 .bg-dark-violet {
     background-color: #8a36b6;
+    color: white;
 }
 
 .bg-light-purple {
@@ -172,6 +186,7 @@ ul {
 
 .bg-dark-purple {
     background-color: #d977ba;
+    color: white;
 }
 
 .bg-goldenrod {
@@ -188,7 +203,7 @@ ul {
 
 .grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
 
 .gap-10px {
@@ -304,7 +319,7 @@ ul {
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
-    font-size: 10rem;
+    font-size: 9rem;
     color: violet;
 }
 
@@ -320,17 +335,24 @@ ul {
   50% { border-color: black; }
 }
 
-
-
 /*-------------------- REUSABLE CSS -------------*/
 
 #home, #about, #gallery {
     height: auto;
 }
 
-@media only screen and(min-width: 1280px) {
-    body {
-        background-color: wheat;
-        z-index: 999;
+@media only screen and (max-width: 1090px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .heading-product {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1780px) {
+    .typewriter h1 {
+        font-size: 8rem;
     }
 }
